@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "InfoIndex";
+}
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Content/Information.js"></script>
+
+
+<h2><b>Presonal Information :</b></h2><br /><br />
+
+<input type="hidden" id="hdnId" />
+
+<input type="text" id="FirstName" placeholder="Enter Firstname" style="width:1000px" /><br/><br/>
+
+<input type="text" id="LastName" placeholder="Enter Lastname" style="width:1000px" /><br/><br/>
+
+<input type="date" id="DOB" placeholder="date of birth" style="width:1000px" /><br/><br/>
+
+<input type="email" id="Email" placeholder="Enter Mail Address" style="width:1000px" /><br/><br/>
+
+<input type="number" id="Phone" placeholder="Enter Mobile no" style="width:1000px" /><br/><br/>
+
+<input type="button" value="Submit" class="btn btn-success" onclick="SaveInfo()" style="width:1000px" /><br/><br/>
+
+
+<table id="tblDetail" class="table table-bordered">
+
+    <thead>
+        <tr>
+            <th>Srno</th>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>DOB</th>
+            <th>Email</th>
+            <th>Mobile no</th>
+
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
